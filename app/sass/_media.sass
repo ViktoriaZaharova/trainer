@@ -1,0 +1,493 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px)
+  .about-training:before
+    width: 550px
+    height: 100%
+    background-position: center bottom
+
+  .about-training .text
+    max-width: 670px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1200px)
+  .result-training__box
+    margin: 0 0 45px
+
+  .attention-purchase__text h2
+    max-width: 570px
+    padding: 0 0 16px 55px
+
+  .attention-purchase__text
+    padding: 20px 0 0 0
+
+  .structure
+    margin: 64px 0
+
+  .structure__content
+    padding: 55px 58px
+
+  .instruction__content .line-decor
+    display: none
+
+  .reviews__box
+    max-width: 315px
+
+  .reviews-video
+    width: 228px
+    height: 152px
+
+@media only screen and (max-width: 1140px)
+  .section-call .image
+    right: -250px
+
+@media only screen and (max-width: 992px)
+  main
+    padding: 136px 0 101px
+
+    h6
+      max-width: 420px
+
+  h1
+    max-width: 420px
+
+  .about-training:before
+    display: none
+
+  .about-training .text
+    max-width: none
+    text-align: center
+    h2
+      text-align: center
+
+  h2
+    font-size: 30px
+
+  .about-training h6
+    max-width: none
+
+  .result-training
+    margin: 63px 0 59px
+
+  .result-training__content
+    justify-content: space-around
+
+
+  .scope-list
+    font-size: 18px
+    padding: 37px 65px 17px
+    li
+      width: 47%
+
+  .scope
+    margin: 0 0 59px
+
+  .result-training__two-box
+    padding: 32px 37px 38px
+    align-items: flex-start
+    .icon
+      width: 56px
+      height: 56px
+      padding: 15px
+    .text
+      width: calc(100% - 56px)
+      padding: 0 0 0 17px
+
+  .result-training__two
+    padding: 62px 0
+
+  .structure__content
+    padding-bottom: 0
+
+  .structure__box
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    max-width: 270px
+    margin: 0 0 60px
+    text-align: left
+    .icon
+      display: flex
+      align-items: center
+      justify-content: center
+      min-width: 61px
+      width: 61px
+      margin: 0 11px 0 0
+    h3
+      max-width: 200px
+      margin: 0
+
+
+  .instruction__content
+    padding: 0 0 0 75px
+    margin: 31px 0 0 0
+    flex-direction: column
+    align-items: flex-start
+
+  .instruction-list
+    width: 100%
+    br
+      display: none
+    li
+      margin: 0 0 32px
+
+  .instruction
+    padding: 60px 0 30px
+
+  .reviews__box
+    max-width: none
+    .author
+      margin: 17px 0 0 0
+
+  .reviews__content
+    margin: 28px 0 0 0
+
+  .reviews__content-video
+    padding: 31px 0
+
+  .reviews
+    padding: 59px 0
+
+  .price
+    padding: 61px 0 43px
+
+  .section-call .image
+    right: -400px
+
+  .section-call h2
+    max-width: 600px
+
+  .list-spectrum
+    display: none
+
+  .footer-top, .footer-bottom
+    display: none
+
+  .footer-mobile
+    display: flex
+    padding: 25px 0
+    .container
+      color: #fff
+      justify-content: space-between
+      align-items: center
+
+  .line-right
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    .item
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      margin: 0 0 10px
+      a
+        margin: 0
+        font-size: 13px
+        color: #bdbdbd
+        font-family: 'segoeL', sans-serif
+        &:not(:last-child)
+          margin: 0 30px 0 0
+
+  .doc-links
+    font-size: 12px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .navigation
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 290px
+    height: 100%
+    background: #ffffff
+    z-index: 15
+    overflow: auto
+    padding: 30px 20px
+
+  .menu
+    display: block
+    height: 100%
+    li:not(:last-child)
+      margin: 0 0 20px
+    li
+      width: 100%
+
+
+  .btn-mobile
+    display: flex
+
+
+  .about-training
+    padding: 30px 0 90px
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 740px)
+  .about-image
+    display: none
+
+  .reviews__content-video
+    width: 100%
+    overflow-x: scroll
+    flex-wrap: nowrap
+
+  .reviews-video
+    min-width: 228px
+    margin: 0 30px 0 0
+
+  .section-call .image
+    display: none
+
+  .section-call
+    padding: 40px 0 47px
+    h2
+      max-width: none
+      margin: 0 auto 23px
+      text-align: center
+      font-size: 22px
+    .bottom-line
+      margin: 0
+      width: 100%
+      align-items: center
+      flex-direction: column
+      .btn
+        margin: 24px auto 0
+        order: 1
+
+  footer .name
+    display: none
+
+@media only screen and (max-width: 620px)
+  .result-training__content
+    padding: 38px 20px
+
+  .result-training__box
+    max-width: none
+    width: 100%
+    flex-direction: row
+    align-items: flex-start
+    margin: 0 0 27px
+    .icon
+      width: 53px
+      height: 53px
+      min-width: 53px
+      padding: 15px
+    .text
+      width: calc(100% - 53px)
+      padding: 0 0 0 15px
+      font-size: 14px
+      p
+        line-height: 20px
+    h3
+      max-width: none
+      font-size: 18px
+      margin: 0 0 8px
+      line-height: normal
+    br
+      display: none
+
+  .scope-list
+    padding: 37px 32px 0
+    li
+      width: 100%
+
+  .scope
+    margin: 0 0 39px
+
+
+  .panel-title h3
+    font-size: 16px
+
+
+  .panel-title
+    flex-wrap: nowrap
+    padding: 20px 24px 15px 21px
+    &:before
+      width: 12px
+    .number
+      width: 18px
+      height: 18px
+      min-width: 18px
+      font-size: 9px
+
+  .panel-body
+    padding: 0 20px 30px 63px
+    font-size: 14px
+
+
+
+  .load-more
+    font-size: 14px
+
+  .instruction
+    padding: 40px 0
+
+  .instruction-list li .icon-wrapper .icon
+    width: 59px
+    height: 59px
+    padding: 10px
+
+  .instruction-list li .icon-wrapper .number
+    width: 23px
+    height: 23px
+    font-size: 13px
+    left: -10px
+
+  .instruction__content
+    padding: 0 0 0 35px
+    margin: 26px 0 0 0
+
+  .instruction-list
+    font-size: 14px
+    li h3
+      font-size: 18px
+      margin: 0 0 9px
+
+  .instruction-list li .text
+    font-size: 14px
+    width: calc(100% - 59px)
+
+  .reviews__box .text
+    line-height: 20px
+    max-height: 140px
+    overflow: hidden
+
+  .reviews
+    padding: 43px 0
+
+  .price
+    padding: 44px 0 54px
+
+
+
+
+@media only screen and (max-width: 576px)
+  main
+    padding: 70px 0 38px
+
+
+
+  h1
+    max-width: none
+    text-align: center
+    font-size: 26px
+    line-height: 36px
+
+
+  .result-training__two-box
+    padding: 32px 15px 0
+    margin: 0
+    font-size: 14px
+    &:last-child
+      padding: 32px 15px 39px
+    h3
+      font-size: 18px
+      margin: 0 0 9px
+
+  .result-training__two
+    padding: 39px 0 46px
+
+  .structure
+    margin: 35px 0 30px
+
+  .price
+    .arrow-wrapper
+      display: none
+
+  .price__content
+    width: 100%
+    flex-direction: column
+    align-items: center
+
+  .price__box
+    margin: 0 0 10px
+    width: 337px
+
+  .price__box .plus, .list-dots
+    padding: 0 27px
+
+  .price__box-bottom
+    padding: 34px 27px 33px
+
+
+
+  .footer-mobile .container
+    flex-direction: column
+    align-items: center
+
+  .list-social
+    margin: 0 auto 24px
+
+  .footer-mobile
+    padding: 21px 0
+
+  .line-right .item a:not(:last-child)
+    margin: 0
+
+  .line-right
+    width: 100%
+    .item
+      width: 100%
+      justify-content: space-around
+
+  .doc-links
+    margin: 0 auto
+    flex-direction: column
+    align-items: center
+    a:not(:last-child)
+      margin: 0 auto 10px
+
+@media only screen and (max-width: 480px)
+  .phone
+    font-size: 18px
+
+  .navigation
+    width: 250px
+
+  h2
+    font-size: 20px
+
+  .about-training
+    padding: 35px 0 51px
+    h6
+      font-size: 16px
+      max-width: 270px
+      margin: 15px auto 27px
+    p
+      font-size: 14px
+      line-height: 24px
+
+  .result-training
+    margin: 43px 0 0
+
+  .scope h2
+    margin: 0 auto 24px
+
+  .structure__content
+    padding: 27px 31px
+
+  .structure__box
+    max-width: none
+    margin: 0 0 16px
+    .icon
+      min-width: 36px
+      width: 36px
+    h3
+      max-width: none
+      font-size: 18px
+
+  .section-call .bottom-line .btn
+    width: 292px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 360px)
+  .price__box
+    width: 100%
+
+
