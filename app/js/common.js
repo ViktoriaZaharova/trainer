@@ -57,3 +57,52 @@ $(document).ready(function() {
     });
 });
 
+$('.reviews__content-video').slick({
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slick-prev"><img src="../img/arrow-right.png" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../img/arrow-right.png" alt=""></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 670,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        },
+        {
+            breakpoint: 570,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+            }
+        }
+    ]
+});
+
+$('.reviews__content-slider').slick({
+    slidesToShow: 4,
+    arrows: false,
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
+});

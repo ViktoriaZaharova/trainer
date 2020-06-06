@@ -120,7 +120,7 @@ h2
     margin: 0 auto
 
 .title-decor
-  padding: 51px 0 0
+  padding: 44px 0 0
   position: relative
   &:before
     content: ''
@@ -149,11 +149,24 @@ h2
   font-size: 18px
   letter-spacing: 0.43px
   color: #110f10
-  width: 330px
+  max-width: 330px
+  width: 100%
   height: 60px
 
   &:hover
     background: #dcc605
+
+.btn-border
+  width: 197px
+  height: 55px
+  border-radius: 5px
+  border: 1px solid $yellow
+  font-size: 20px
+  font-weight: 500
+  color: #fff
+  &:hover
+    background: $yellow
+    color: #000
 
 .btn-call
   box-shadow: 0 3px 24px rgba(255, 205, 59, 0.35)
@@ -220,6 +233,10 @@ main
   position: absolute
   bottom: -159px
   right: -66px
+
+.main-text
+  position: relative
+  z-index: 1
 
 .phone
   font-size: 22px
@@ -862,10 +879,90 @@ blockquote
     height: 84px
     border: 1px solid $btn
 
+//.download-program
+.download-program
+  background-color: #312e30
+  color: #fff
+  .container
+    align-items: center
+    justify-content: space-between
+  h2
+    width: auto
+    color: #fff
+    text-align: left
+    strong
+      font-size: 46px
+      color: #ffe40e
+    span
+      text-align: left
+  .btn
+    position: relative
+    z-index: 1
+
+.download-program__img
+  position: relative
+  margin: -82px -13px 0 0
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%,0)
+    width: 834px
+    height: 177px
+    background: url("../img/shadow.png") no-repeat center
+      size: contain
+  >*
+    position: relative
+    z-index: 1
+
+//why-program
+.why-program
+  background-color: #faf7f5
+  padding: 100px 0
+  font-size: 14px
+  .container
+    justify-content: space-between
+    align-items: flex-start
+  .title-box
+    padding: 39px 0 0 37px
+  .title-box__border
+    border: 5px solid #4c484a
+    opacity: .1
+    height: 331px
+    &:before, &:after
+      display: none
+  h2
+    text-align: left
+    margin: 0 0 26px
+
+  .description
+    font-size: 20px
+    color: #110f10
+
+.why-program__content
+  width: calc(100% - 389px)
+  padding: 0 62px 0 0
+  .text
+    margin: 75px 0 0
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+.why-program__image
+  width: 389px
 
 //.reviews
 .reviews
-  padding: 80px 0
+  padding: 100px 0
+  h6
+    color: #171516
+    font-size: 26px
+    text-align: center
+    width: 100%
+    margin: 0 auto 29px
+    font-weight: 900
 
 .reviews__content
   width: 100%
@@ -873,53 +970,58 @@ blockquote
   align-items: flex-start
   flex-wrap: wrap
   justify-content: space-between
-  margin: 42px 0
+  margin: 42px 0 93px
+  .btn
+    margin: 60px auto 0
+    color: #171516
+    font-weight: 500
+    font-size: 18px
+    width: 215px
+    height: 48px
 
 .reviews__box
   display: flex
-  flex-direction: column
-  margin: 0 0 47px
-  max-width: 325px
+  align-items: center
+  justify-content: center
+  max-width: 290px
   width: 100%
+  margin: 0 auto
+  padding: 0 10px
 
-  .text
-    font-size: 14px
-    line-height: 24px
-    color: #000
+.slick-dots
+  position: relative
+  width: 100%
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 30px 0 0
+  .slick-active
+    background: #ffb800
+  li
+    width: 8px
+    height: 8px
+    background: rgba(#000, .4)
+    border-radius: 50%
+    button
+      display: none
 
-  .author
-    width: 100%
-    display: flex
-    align-items: center
-    justify-content: space-between
-    margin: 30px 0 0 0
-
-  h4
-    font-size: 16px
-    color: #000000
-    margin: 0 auto 0 17px
-    font-family: 'segoeSB', sans-serif
+.reviews__content-slider
+  width: 100%
 
 .reviews__content-video
   width: 100%
-  display: flex
-  align-items: center
-  justify-content: space-between
-  flex-wrap: wrap
-  padding: 41px 0
-  border:
-    top: 1px solid #dedede
-    bottom: 1px solid #dedede
+  padding: 0 90px
 
 .reviews-video
-  width: 328px
-  height: 219px
+  width: 311px
+  height: 207px
   position: relative
   display: flex
   align-items: center
   justify-content: center
   overflow: hidden
-
+  margin: 0 auto
   &:before
     content: ''
     position: absolute
@@ -937,6 +1039,36 @@ blockquote
     top: 50%
     transform: translate(-50%, -50%)
     z-index: 2
+
+.slick-arrow
+  width: 50px
+  height: 50px
+  border-radius: 25px
+  border: 1px solid #b7b7b7
+  cursor: pointer
+  z-index: 1
+  top: 50%
+  transform: translate(0,-50%)
+  display: flex
+  align-items: center
+  justify-content: center
+  &:before
+    display: none
+  &:hover, &:focus
+    background: #ffb800
+    border-color: #ffb800
+    img
+      filter: brightness(0) invert(1)
+
+
+.slick-prev
+  left: 0
+  img
+    transform: scale(-1,1)
+
+
+.slick-next
+  right: 0
 
 
 .price
@@ -967,7 +1099,6 @@ blockquote
 
 
 .price__box
-  border: 2px solid transparent
   border-radius: 5px
   background-color: #fff
   width: 360px
@@ -995,7 +1126,12 @@ blockquote
 
   .plus
     padding: 0 38px
+  &:last-child
+    .price-wrapper
+      justify-content: center
 
+.slick-dotted.slick-slider
+  margin-bottom: 0
 
 .list-star
   width: 100%
@@ -1101,6 +1237,7 @@ blockquote
     margin: 0 auto 23px
 
 
+
 //.section-call
 .section-call
   background-color: #d7d2ce
@@ -1174,7 +1311,7 @@ blockquote
       display: inline-block
       bottom: 16px
       left: 20px
-
+      color: #fff
       opacity: .5
       transition: .3s ease
 
@@ -1451,37 +1588,6 @@ footer
 .price__content-wrapper, .mass-media__content-wrapper
   width: 100%
 
-.arrow-wrapper
-  width: 100%
-  margin: 48px 0 0 0
-  display: none
-  align-items: center
-  justify-content: center
-
-  .left-arrow, .right-arrow
-    display: flex
-    align-items: center
-    justify-content: center
-    border: 1px solid #e2e2e2
-    width: 50px
-    height: 50px
-    background: url("../img/arrow-left.png") no-repeat center
-      size: 10px
-    margin: 0 3px
-
-    &:hover
-      border-color: $yellow
-      background: url("../img/arrow-right.png") $yellow no-repeat center
-
-  .right-arrow
-    transform: rotate(180deg)
-
-    &:hover
-      transform: rotate(0)
-
-  .left-arrow
-    &:hover
-      transform: rotate(180deg)
 
 
 @import "media"
