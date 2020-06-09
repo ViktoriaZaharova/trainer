@@ -7,6 +7,10 @@ $(document).ready(function() {
         $('.navigation').slideToggle();
     });
 
+    $('.btn-close').click(function () {
+        $('.navigation').fadeOut();
+    });
+
     // модальные окна (несколько)
     $(document).ready(function () {
         var overlay = $('.overlay');
@@ -59,8 +63,8 @@ $(document).ready(function() {
 
 $('.reviews__content-video').slick({
     slidesToShow: 3,
-    prevArrow: '<button type="button" class="slick-prev"><img src="../img/arrow-right.png" alt=""></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../img/arrow-right.png" alt=""></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-right.png" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.png" alt=""></button>',
     responsive: [
         {
             breakpoint: 992,

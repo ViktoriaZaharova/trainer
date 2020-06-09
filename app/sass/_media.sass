@@ -7,15 +7,13 @@
   .about-training:before
     width: 495px
     height: 851px
-    opacity: .15
     background-position: center
     left: 0
 
   .about-training .text
     max-width: 550px
 
-  .about-training__two:before
-    opacity: .2
+
 
 
 @media only screen and (max-width: 1200px)
@@ -408,9 +406,12 @@
 
   .about-training
     padding: 30px 0 90px
+    &:before
+      opacity: .15
 
   .about-training__two
     padding: 80px 0
+
 
 @media only screen and (max-width: 750px)
   .result-training__two-box
@@ -884,6 +885,20 @@
 
   .section-call .bottom-line .btn
     width: 292px
+
+  .btn-close
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    right: 20px
+    top: 20px
+    cursor: pointer
+    z-index: 2
+
+  .navigation
+    width: 100%
+    padding: 40px 20px
 
 
 /* Custom, iPhone Retina */
