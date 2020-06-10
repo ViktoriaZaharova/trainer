@@ -54,7 +54,12 @@ $(document).ready(function() {
             data: $(this).serialize()
         }).done(function () {
             $(this).find("input").val("");
-            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $('.overlay').fadeIn();
+            $('#modal-thanks').css('display', 'flex')
+                .animate({
+                    opacity: 1,
+                    top: '50%'
+                }, 200);
             $(".form").trigger("reset");
         });
         return false;
