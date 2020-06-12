@@ -81,7 +81,6 @@ $('.reviews__content-video').slick({
             breakpoint: 670,
             settings: {
                 slidesToShow: 2,
-                arrows: false,
                 autoplay: true,
                 autoplaySpeed: 2000,
             }
@@ -90,7 +89,6 @@ $('.reviews__content-video').slick({
             breakpoint: 570,
             settings: {
                 slidesToShow: 1,
-                arrows: false,
             }
         }
     ]
